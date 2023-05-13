@@ -15,6 +15,15 @@
         var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");var $i = $("<span/>").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;var x = e.pageX,y = e.pageY;$i.css({"z-index": 100000000,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": "#ff6651"});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});
 </script>
+	
+<script>
+        /*https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json*/
+        L2Dwidget.init({ "model": { jsonPath:
+              "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+            "scale": 1 }, "display": { "position": "right", "width": 110, "height": 150,
+            "hOffset": 0, "vOffset": -20 }, "mobile": { "show": true, "scale": 0.5 },
+          "react": { "opacityDefault": 0.8, "opacityOnHover": 0.1 } });
+</script>
 
 <head>
     <meta charset="UTF-8">
@@ -384,14 +393,6 @@
         })
         </script>
 			
-			<script>
-        /*https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json*/
-        L2Dwidget.init({ "model": { jsonPath:
-              "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
-            "scale": 1 }, "display": { "position": "right", "width": 110, "height": 150,
-            "hOffset": 0, "vOffset": -20 }, "mobile": { "show": true, "scale": 0.5 },
-          "react": { "opacityDefault": 0.8, "opacityOnHover": 0.1 } });
-      </script>
 </body>
 
 </html>
